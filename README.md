@@ -16,12 +16,16 @@ This is a repository for the coursework. It performs data analysis on NYC taxi d
 ```
 
 ## Dependencies
-To install all the dependencies, check requirements.txt.
+To install all the dependencies, check requirements.txt. You can run the following commands for an identical environment.
+```
+conda create --name myenv --file requirements.txt
+conda install --name myenv --file requirements.txt
+```
 
 
 ## Data Analyze
 
 To reproduce the results, run the following command. You can change the path to save the model as a customized one.
 ```
-python tran_model.py --save_path='./model/nyc_taxi_mlp.pt'
+python train_model.py
 ```
